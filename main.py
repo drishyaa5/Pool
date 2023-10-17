@@ -243,11 +243,11 @@ while run:
         draw_text("GAME OVER", large_font, WHITE, SCREEN_WIDTH /2 -160, SCREEN_HEIGHT / 2 - 100)
         game_running = False
     #check if all balls are in
-    if len(ball) == 1:
+    if len(balls) == 1:
         draw_text("YOU WIN!!!!!!!!!", large_font, WHITE, SCREEN_WIDTH /2 -160, SCREEN_HEIGHT / 2 - 100)
         game_running = False
     
-    #event handler
+    #event handler)
     for event in pygame.event.get():
         if event.type == pygame.MOUSEBUTTONDOWN and taking_shot == True:
             powering_up = True
